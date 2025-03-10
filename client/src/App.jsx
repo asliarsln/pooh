@@ -4,6 +4,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import pooh from "./assets/pooh.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,27 +12,24 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href={pooh} target="_blank">
+          <img src={pooh} className="logo" alt="Pooh" />
         </a>
       </div>
-      <h1>Hello!</h1>
       <div className="card">
+        {/*
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> This is my first React project
-        </p>
+        <br></br>
+      */}
+
         <label>
-          Yaşadığınız sorunu yazınız
+          <h3>Yaşadığınız sorunu yazınız</h3> <br></br>
           <textarea name="postContent" rows={4} cols={40} />
         </label>
       </div>
-      <p className="read-the-docs">Aslı</p>
+      <p className="read-the-docs">Avukat Öneri Sistemi</p>
     </>
   );
 }
