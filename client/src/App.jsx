@@ -26,6 +26,10 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> This is my first React project
         </p>
+        <label>
+          Yaşadığınız sorunu yazınız
+          <textarea name="postContent" rows={4} cols={40} />
+        </label>
       </div>
       <p className="read-the-docs">Aslı</p>
     </>
