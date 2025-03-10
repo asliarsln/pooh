@@ -23,12 +23,14 @@ function App() {
         </button>
         <br></br>
       */}
-
         <label>
           <h3>Yaşadığınız sorunu yazınız</h3> <br></br>
           <textarea name="postContent" rows={4} cols={40} />
         </label>
+        <br />
+        <button>Gönder</button> {/* Buton */}
       </div>
+
       <p className="read-the-docs">Avukat Öneri Sistemi</p>
     </>
   );
